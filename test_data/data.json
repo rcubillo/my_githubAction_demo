@@ -1,0 +1,16 @@
+{
+    "user":[
+        {
+            "name":"Name1",
+            "job":"Job1"
+        },
+        {
+            "name":"Name2",
+            "job":"Job2"
+        },
+        {
+            "name":"Name3",
+            "job":"Job3"
+        }
+    ]
+}
