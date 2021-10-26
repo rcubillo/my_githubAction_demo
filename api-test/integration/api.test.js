@@ -1,4 +1,4 @@
-var supertest=require('supertest')
+var supertest = require('supertest')
 const request=supertest('https://reqres.in/')
 
 let job;
@@ -39,7 +39,7 @@ describe('API DEMO Test', () =>{
 
 //======> OR
 
-test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
+test.only.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
 
         const response= await request.get(`api/users?page=${page}`)
         console.log(response.body)
