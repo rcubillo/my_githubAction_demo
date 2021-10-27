@@ -16,14 +16,14 @@ describe('API DEMO Test', () =>{
 
     
 
-// test('Get All Users ', async ()=> {
+test('Get All Users ', async ()=> {
 
-//     const response= await request.get('api/users?page=2')
-//     console.log(response.body)
-//     expect(response.status).toBe(200);
+    const response= await request.get('api/users?page=2')
+    console.log(response.body)
+    expect(response.status).toBe(200);
 
     
-// })
+})
 
 
 //if you want to validate each page separatelly use bellow function. Instead of using generic way like using lop statement we prefer jest methods 
