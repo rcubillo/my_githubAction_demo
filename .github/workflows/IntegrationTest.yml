@@ -34,4 +34,4 @@ jobs:
         #JIRA_USERNAME: ${{ secrets.jira_username }}
         JIRA_PASSWORD: ${{ secrets.jira_password }}
 
-    - run: 'curl -H "Content-Type: multipart/form-data" -u $JIRA_USERNAME:$JIRA_PASSWORD -F "file=@junit.xml" "https://fortress-technology.atlassian.net/rest/raven/1.0/import/execution/junit/multipart/junit?projectKey=XRAY&testPlanKey=XRAY-26"'
+    - run: 'curl -H "Content-Type: multipart/form-data" -u $JIRA_USERNAME:$JIRA_PASSWORD -F "file=@junit.xml" "https://fortress-technology.atlassian.net/rest/raven/1.0/import/execution/junit/multipart/junit?projectKey=XRAYD&testPlanKey=XRAYD-12"'
