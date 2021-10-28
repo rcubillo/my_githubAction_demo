@@ -39,7 +39,7 @@ test('Get All Users ', async ()=> {
 
 //======> OR
 
-test.only.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
+test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
 
         const response= await request.get(`api/users?page=${page}`)
         console.log(response.body)
@@ -65,7 +65,7 @@ test('Post-Create a new user', async ()=>{
 
 //creating multiple users using array in method signature 
 
-test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new user (%s)', async (name,job)=>{
+test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new users (%s)', async (name,job)=>{
     let user ={
         "name" : `${name}`,
         "job" : `${job}`
