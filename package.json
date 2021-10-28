@@ -10,7 +10,7 @@
   "author": "palasgarov",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.2.5"
+    "jest": "^27.3.1"
   },
   "dependencies": {
     "jest-junit": "^13.0.0",

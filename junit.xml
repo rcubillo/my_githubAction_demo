@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="api-test" tests="11" failures="0" errors="0" time="1.915">
+  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="6" timestamp="2021-10-27T19:43:29" time="1.844" tests="11">
+    <testcase classname="API DEMO Test Get All Users " name="API DEMO Test Get All Users " time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (0) " name="API DEMO Test Get All Users from page (0) " time="0.437">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (1) " name="API DEMO Test Get All Users from page (1) " time="0.056">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (2) " name="API DEMO Test Get All Users from page (2) " time="0.065">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (3) " name="API DEMO Test Get All Users from page (3) " time="0.379">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (4) " name="API DEMO Test Get All Users from page (4) " time="0.41">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new user" name="API DEMO Test Post-Create a new user" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new user (Alex)" name="API DEMO Test Post-Create a new user (Alex)" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new user (Paul)" name="API DEMO Test Post-Create a new user (Paul)" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new user (Sam)" name="API DEMO Test Post-Create a new user (Sam)" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="API DEMO Test PUT-Update User" name="API DEMO Test PUT-Update User" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
