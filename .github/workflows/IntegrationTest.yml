@@ -34,4 +34,4 @@ jobs:
         JIRA_USERNAME: ${{ secrets.jira_username }}
         JIRA_PASSWORD: ${{ secrets.jira_password }}
 
-    - run: 'curl -H "Content-Type: multipart/form-data" -u $JIRA_USERNAME:$JIRA_PASSWORD -F "file=@api-test/integration/api.test.js" "$JIRA_SERVER_URL/rest/raven/1.0/import/execution/junit?projectKey=XRAYD"'
+    - run: 'curl -H "Content-Type: multipart/form-data" -u $JIRA_USERNAME:$JIRA_PASSWORD -F "file=@api-test/integration/api.test.js" "$JIRA_SERVER_URL/POST/rest/raven/1.0/import/execution/junit/multipart/formdata"'
