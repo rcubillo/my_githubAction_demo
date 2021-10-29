@@ -35,5 +35,5 @@ jobs:
         username: ${{ secrets.client_id }}
         password: ${{ secrets.client_secret }}
         testFormat: "junit"
-        testPaths: "/junit.xml"
+        testPaths: "junit.xml"
         projectKey: "XRAYD"
