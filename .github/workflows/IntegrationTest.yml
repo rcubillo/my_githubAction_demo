@@ -35,5 +35,5 @@ jobs:
         username: ${{ secrets.client_id }}
         password: ${{ secrets.client_secret }}
         testFormat: "junit"
-        testPaths: "**/jest-junit/*.xml"
+        testPaths: "./node_modules/jest-junit-reporter"
         projectKey: "XRAYD"
