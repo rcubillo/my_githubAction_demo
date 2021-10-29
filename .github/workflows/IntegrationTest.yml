@@ -32,8 +32,8 @@ jobs:
     # Submit results to Xray
     - uses: mikepenz/xray-action@v0.9.4
       with:
-        username: "B3546CF5E2DE41888E11BD7FDF9E4074"
-        password: "ad718ab06d31e79b57ffecc02e6feb937eac98e3490efc5ec24134ab17ae0a48"
+        username: ${{ secrets.client_id }}
+        password: ${{ secrets.client_secret }}
         testFormat: "junit"
         testPaths: "api-test/integration/api.test.js"
         projectKey: "XRAYD"
