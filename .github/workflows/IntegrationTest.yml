@@ -29,9 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-      env:
-        JIRA_SERVER_URL: ${{ secrets.jira_server_url }}
-        #JIRA_USERNAME: ${{ secrets.jira_username }}
-        JIRA_PASSWORD: ${{ secrets.jira_password }}
-
-    - run: 'curl -H "Content-Type: multipart/form-data" -u $JIRA_USERNAME:$JIRA_PASSWORD -F "file=@junit.xml" "https://alas21.atlassian.net/rest/raven/1.0/import/execution/junit/multipart/junit?projectKey=XRAYD&testPlanKey=XRAYD-12"'
+    uses: mikepenz/xray-action@v0.9.4
+    with:
+        username: ${{ secrets.client_id }}
+        password: ${{ secrets.client_secret }}
+        testFormat: "junit"
+        testPaths: "**/surefire-reports/*.xml"
+        projectKey: "CALC"
