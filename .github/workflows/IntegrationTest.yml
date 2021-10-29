@@ -34,5 +34,5 @@ jobs:
         username: ${{ secrets.client_id }}
         password: ${{ secrets.client_secret }}
         testFormat: "junit"
-        testPaths: "**/surefire-reports/*.xml"
+        testPaths: "api-test/integration/api.test.js"
         projectKey: "XRAYD"
