@@ -37,7 +37,7 @@ test.only.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
     
 })
 
-======> OR
+//======> OR
 
 test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
 
