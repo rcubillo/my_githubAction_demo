@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "api automation",
   "main": "index.js",
-  "scripts": {
+   "scripts": {
     "test": "node_modules/.bin/jest",
-    "debug": "node --nolazy --debug-brk=5858 myProgram.js"
+    "debug": "node --nolazy --debug-brk=5858 myProgram.js",
+    "ci": "jest --ci --testResultsProcessor='jest-junit'"
   },
+  "keywords": [
+    "jest",
+    "junit",
+    "reporter"
+  ],
   "author": "palasgarov",
   "license": "ISC",
   "devDependencies": {
@@ -15,5 +21,10 @@
   "dependencies": {
     "jest-junit": "^13.0.0",
     "supertest": "^6.1.6"
-  }
+  
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testRegex": "(((\\.|/)(spec))\\.js?$)"
+  } 
 }

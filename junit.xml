@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="api-test" tests="11" failures="0" errors="0" time="2.982">
-  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="0" timestamp="2021-10-28T05:37:18" time="2.931" tests="11">
-    <testcase classname="API DEMO Test Get All Users " name="API DEMO Test Get All Users " time="0.422">
+<testsuites name="api-test" tests="14" failures="0" errors="0" time="2.554">
+  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="0" timestamp="2021-11-02T19:40:51" time="2.512" tests="14">
+    <testcase classname="API DEMO Test Get All Users " name="API DEMO Test Get All Users " time="0.144">
     </testcase>
-    <testcase classname="API DEMO Test Get All Users from page (0) " name="API DEMO Test Get All Users from page (0) " time="0.051">
+    <testcase classname="API DEMO Test Get All Users from page (1) " name="API DEMO Test Get All Users from page (1) " time="0.063">
     </testcase>
-    <testcase classname="API DEMO Test Get All Users from page (1) " name="API DEMO Test Get All Users from page (1) " time="0.346">
+    <testcase classname="API DEMO Test Get All Users from page (2) " name="API DEMO Test Get All Users from page (2) " time="0.052">
     </testcase>
-    <testcase classname="API DEMO Test Get All Users from page (2) " name="API DEMO Test Get All Users from page (2) " time="0.054">
+    <testcase classname="API DEMO Test Get All Users from page (3) " name="API DEMO Test Get All Users from page (3) " time="0.049">
     </testcase>
-    <testcase classname="API DEMO Test Get All Users from page (3) " name="API DEMO Test Get All Users from page (3) " time="0.048">
+    <testcase classname="API DEMO Test Get All Users from page (0) " name="API DEMO Test Get All Users from page (0) " time="0.055">
     </testcase>
-    <testcase classname="API DEMO Test Get All Users from page (4) " name="API DEMO Test Get All Users from page (4) " time="0.053">
+    <testcase classname="API DEMO Test Get All Users from page (1) " name="API DEMO Test Get All Users from page (1) " time="0.057">
     </testcase>
-    <testcase classname="API DEMO Test Post-Create a new user" name="API DEMO Test Post-Create a new user" time="0.356">
+    <testcase classname="API DEMO Test Get All Users from page (2) " name="API DEMO Test Get All Users from page (2) " time="0.08">
     </testcase>
-    <testcase classname="API DEMO Test Post-Create a new users (Alex)" name="API DEMO Test Post-Create a new users (Alex)" time="0.412">
+    <testcase classname="API DEMO Test Get All Users from page (3) " name="API DEMO Test Get All Users from page (3) " time="0.052">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (4) " name="API DEMO Test Get All Users from page (4) " time="0.065">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new user" name="API DEMO Test Post-Create a new user" time="0.426">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new users (Alex)" name="API DEMO Test Post-Create a new users (Alex)" time="0.411">
     </testcase>
     <testcase classname="API DEMO Test Post-Create a new users (Paul)" name="API DEMO Test Post-Create a new users (Paul)" time="0.408">
     </testcase>
-    <testcase classname="API DEMO Test Post-Create a new users (Sam)" name="API DEMO Test Post-Create a new users (Sam)" time="0.41">
+    <testcase classname="API DEMO Test Post-Create a new users (Sam)" name="API DEMO Test Post-Create a new users (Sam)" time="0.335">
     </testcase>
     <testcase classname="API DEMO Test PUT-Update User" name="API DEMO Test PUT-Update User" time="0">
     </testcase>
