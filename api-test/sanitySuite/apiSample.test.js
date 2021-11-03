@@ -19,7 +19,7 @@ describe('API DEMO Test', () => {
         console.log('Run after Script ');
     });
 
-    test.only.each(TestData.user)('Post-Create a new user (%s)', async (user) => {
+    test.each(TestData.user)('Post-Create a new user (%s)', async (user) => {
 
         const response = await request.post('api/users').send(user)
         expect(response.status).toBe(201);
@@ -28,7 +28,14 @@ describe('API DEMO Test', () => {
 
 
     });
+    test.only('Get All Users ', async ()=> {
+
+        const response= await request.get(`api/users?page=${TestData.getUser.id}`)
+        console.log(response.body)
+        expect(response.status).toBe(200);
+    
+        
+    });
    
 });
-
 

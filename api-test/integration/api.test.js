@@ -39,14 +39,14 @@ test('Get All Users ', async ()=> {
 
 //  //======> OR
 
-// test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
+test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
 
-//         const response= await request.get(`api/users?page=${page}`)
-//         console.log(response.body)
-//         expect(response.status).toBe(200);
+        const response= await request.get(`api/users?page=${page}`)
+        console.log(response.body)
+        expect(response.status).toBe(200);
     
         
-//     })
+    })
 
 // test('Post-Create a new user', async ()=>{
 //     let user ={

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="api-test" tests="3" failures="0" errors="0" time="1.732">
-  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="0" timestamp="2021-11-03T19:35:02" time="1.674" tests="3">
-    <testcase classname="API DEMO Test Post-Create a new user ({ name: &apos;Name1&apos;, job: &apos;Job1&apos; })" name="API DEMO Test Post-Create a new user ({ name: &apos;Name1&apos;, job: &apos;Job1&apos; })" time="0.418">
+<testsuites name="api-test" tests="4" failures="0" errors="0" time="0.583">
+  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="3" timestamp="2021-11-03T20:48:44" time="0.531" tests="4">
+    <testcase classname="API DEMO Test Post-Create a new user ({ name: &apos;Name1&apos;, job: &apos;Job1&apos; })" name="API DEMO Test Post-Create a new user ({ name: &apos;Name1&apos;, job: &apos;Job1&apos; })" time="0">
+      <skipped/>
     </testcase>
-    <testcase classname="API DEMO Test Post-Create a new user ({ name: &apos;Name2&apos;, job: &apos;Job2&apos; })" name="API DEMO Test Post-Create a new user ({ name: &apos;Name2&apos;, job: &apos;Job2&apos; })" time="0.405">
+    <testcase classname="API DEMO Test Post-Create a new user ({ name: &apos;Name2&apos;, job: &apos;Job2&apos; })" name="API DEMO Test Post-Create a new user ({ name: &apos;Name2&apos;, job: &apos;Job2&apos; })" time="0">
+      <skipped/>
     </testcase>
-    <testcase classname="API DEMO Test Post-Create a new user ({ name: &apos;Name3&apos;, job: &apos;Job3&apos; })" name="API DEMO Test Post-Create a new user ({ name: &apos;Name3&apos;, job: &apos;Job3&apos; })" time="0.409">
+    <testcase classname="API DEMO Test Post-Create a new user ({ name: &apos;Name3&apos;, job: &apos;Job3&apos; })" name="API DEMO Test Post-Create a new user ({ name: &apos;Name3&apos;, job: &apos;Job3&apos; })" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users " name="API DEMO Test Get All Users " time="0.207">
     </testcase>
   </testsuite>
 </testsuites>
