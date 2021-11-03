@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="api-test" tests="1" failures="0" errors="0" time="0.499">
-  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="0" timestamp="2021-11-03T14:34:50" time="0.453" tests="1">
+<testsuites name="api-test" tests="14" failures="0" errors="0" time="3.889">
+  <testsuite name="API DEMO Test" errors="0" failures="0" skipped="0" timestamp="2021-11-03T18:09:27" time="3.826" tests="14">
     <testcase classname="API DEMO Test Get All Users " name="API DEMO Test Get All Users " time="0.09">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (1) " name="API DEMO Test Get All Users from page (1) " time="0.067">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (2) " name="API DEMO Test Get All Users from page (2) " time="0.067">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (3) " name="API DEMO Test Get All Users from page (3) " time="0.448">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (0) " name="API DEMO Test Get All Users from page (0) " time="0.511">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (1) " name="API DEMO Test Get All Users from page (1) " time="0.062">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (2) " name="API DEMO Test Get All Users from page (2) " time="0.064">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (3) " name="API DEMO Test Get All Users from page (3) " time="0.074">
+    </testcase>
+    <testcase classname="API DEMO Test Get All Users from page (4) " name="API DEMO Test Get All Users from page (4) " time="0.414">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new user" name="API DEMO Test Post-Create a new user" time="0.407">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new users (Alex)" name="API DEMO Test Post-Create a new users (Alex)" time="0.41">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new users (Paul)" name="API DEMO Test Post-Create a new users (Paul)" time="0.41">
+    </testcase>
+    <testcase classname="API DEMO Test Post-Create a new users (Sam)" name="API DEMO Test Post-Create a new users (Sam)" time="0.332">
+    </testcase>
+    <testcase classname="API DEMO Test PUT-Update User" name="API DEMO Test PUT-Update User" time="0">
     </testcase>
   </testsuite>
 </testsuites>

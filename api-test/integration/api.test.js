@@ -37,7 +37,7 @@ test.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
     
 })
 
-// // //======> OR
+ //======> OR
 
 test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
 
@@ -62,8 +62,7 @@ test('Post-Create a new user', async ()=>{
 
 });
 
-
-// // //creating multiple users using array in method signature 
+ //creating multiple users using array in method signature 
 
 test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new users (%s)', async (name,job)=>{
     let user ={
