@@ -64,19 +64,19 @@ test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (p
 
 //  //creating multiple users using array in method signature 
 
-// test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new users (%s)', async (name,job)=>{
-//     let user ={
-//         "name" : `${name}`,
-//         "job" : `${job}`
-//     }
-//     const response = await request.post('api/users').send(user)
+test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new users (%s)', async (name,job)=>{
+    let user ={
+        "name" : `${name}`,
+        "job" : `${job}`
+    }
+    const response = await request.post('api/users').send(user)
     
-//     expect(response.status).toBe(201);
-//     expect(response.body.name).toBe(name)
-//     console.log(response.body)
+    expect(response.status).toBe(201);
+    expect(response.body.name).toBe(name)
+    console.log(response.body)
 
 
-// });
+});
 
 test('PUT-Update User', async()=>{
 
