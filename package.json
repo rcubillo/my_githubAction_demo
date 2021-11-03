@@ -5,6 +5,7 @@
   "main": "index.js",
    "scripts": {
     "test": "node_modules/.bin/jest",
+    "test:sanitySuite" : "node_modules/.bin/sanitySuite/jest",
     "debug": "node --nolazy --debug-brk=5858 myProgram.js",
     "ci": "jest --ci --testResultsProcessor='jest-junit'"
   },
