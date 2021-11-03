@@ -78,14 +78,14 @@ test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (p
 
 // });
 
-// test('PUT-Update User', async()=>{
+test('PUT-Update User', async()=>{
 
-//     let updateUser= {
-//         "name" : "STED",
-//         "job" : `${job}`
-//     }
-//     const response = request.put('api/users/2').set("Authontication","Value").send(updateUser)
+    let updateUser= {
+        "name" : "STED",
+        "job" : `${job}`
+    }
+    const response = request.put('api/users/2').set("Authontication","Value").send(updateUser)
 
-// });
+});
 
 });
