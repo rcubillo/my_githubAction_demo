@@ -5,9 +5,9 @@ name: IntegrationTest
 
 on:
   push:
-    branches: [ main ]
+    branches: [ XRAYD-12-api-test ]
   pull_request:
-    branches: [ main ]
+    branches: [ XRAYD-12-api-test ]
 
 jobs:
   build:
