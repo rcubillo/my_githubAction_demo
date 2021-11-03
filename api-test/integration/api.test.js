@@ -26,20 +26,20 @@ test('Get All Users ', async ()=> {
 })
 
 
-//if you want to validate each page separatelly use bellow function. Instead of using generic way like using lop statement we prefer jest methods 
+// if you want to validate each page separatelly use bellow function. Instead of using generic way like using lop statement we prefer jest methods 
 
-// test.only.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
+test.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
 
-//     const response= await request.get(`api/users?page=${page}`)
-//     console.log(response.body)
-//     expect(response.status).toBe(200);
+    const response= await request.get(`api/users?page=${page}`)
+    console.log(response.body)
+    expect(response.status).toBe(200);
 
     
-// })
+})
 
-//======> OR
+// //======> OR
 
-test.only.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
+test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (page)=> {
 
         const response= await request.get(`api/users?page=${page}`)
         console.log(response.body)
@@ -63,9 +63,9 @@ test.only.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', asy
 // });
 
 
-//creating multiple users using array in method signature 
+// // //creating multiple users using array in method signature 
 
-test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new user (%s)', async (name,job)=>{
+test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create a new users (%s)', async (name,job)=>{
     let user ={
         "name" : `${name}`,
         "job" : `${job}`
@@ -87,6 +87,6 @@ test('PUT-Update User', async()=>{
     }
     const response = request.put('api/users/2').set("Authontication","Value").send(updateUser)
 
-})
+});
 
 });
