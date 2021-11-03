@@ -20,7 +20,7 @@ test('Get All Users ', async ()=> {
 
     const response= await request.get('api/users?page=2')
     console.log(response.body)
-    expect(response.status).toBe(500);
+    expect(response.status).toBe(200);
 
     
 })
