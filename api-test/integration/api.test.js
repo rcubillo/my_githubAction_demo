@@ -1,7 +1,6 @@
 var supertest = require('supertest')
 const request=supertest('https://reqres.in/')
 
-let job;
 describe('API DEMO Test', () =>{
 
 
