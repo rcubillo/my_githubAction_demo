@@ -3,15 +3,15 @@
 
 name: Integration
 
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
 on:
   push:
-    paths:
-      - '**/integrations/*'
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+# on:
+#   push:
+#     paths:
+#       - '**/integrations/*'
 
 jobs:
   build:
