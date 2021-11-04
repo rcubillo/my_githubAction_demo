@@ -78,14 +78,14 @@ test('Post-Create a new user', async ()=>{
 
 // });
 
-// test('PUT-Update User', async()=>{
+test('PUT-Update User', async()=>{
 
-//     let updateUser= {
-//         "name" : "STED",
-//         "job" : `${job}`
-//     }
-//     const response = request.put('api/users/2').set("Authontication","Value").send(updateUser)
+    let updateUser= {
+        "name" : "STED",
+        "job" : `${job}`
+    }
+    const response = request.put('api/users/2').set("Authontication","Value").send(updateUser)
 
-// })
+})
 
 });
