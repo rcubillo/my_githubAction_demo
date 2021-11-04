@@ -47,19 +47,19 @@ test.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
 
 //     })
 
-// test('Post-Create a new user', async ()=>{
-//     let user ={
-//         "name" : "morphose",
-//         "job" : "leader"
-//     }
-//     const response = await request.post('api/users').send(user)
+test('Post-Create a new user', async ()=>{
+    let user ={
+        "name" : "morphose",
+        "job" : "leader"
+    }
+    const response = await request.post('api/users').send(user)
 
-//     expect(response.status).toBe(201);
-//     expect(response.body.name).toBe("morphose")
-//     job=response.body.job
+    expect(response.status).toBe(201);
+    expect(response.body.name).toBe("morphose")
+    job=response.body.job
 
 
-// });
+});
 
 
 // //creating multiple users using array in method signature 
