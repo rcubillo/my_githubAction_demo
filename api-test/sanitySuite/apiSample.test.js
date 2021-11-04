@@ -28,7 +28,7 @@ describe('API DEMO Test', () => {
 
 
     });
-    test('Get All Users ', async ()=> {
+    test('Get Users ', async ()=> {
 
         const response= await request.get(`api/users?page=${TestData.getUser.id}`)
         console.log(response.body)
