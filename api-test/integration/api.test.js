@@ -19,7 +19,7 @@ test('Get All Users ', async ()=> {
 
     const response= await request.get('api/users?page=2')
     console.log(response.body)
-    expect(response.status).toBe(201);
+    expect(response.status).toBe(501);
 
     
 })
@@ -31,7 +31,7 @@ test.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
 
     const response= await request.get(`api/users?page=${page}`)
     console.log(response.body)
-    expect(response.status).toBe(200);
+    expect(response.status).toBe(500);
 
     
 })
@@ -42,7 +42,7 @@ test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (p
 
         const response= await request.get(`api/users?page=${page}`)
         console.log(response.body)
-        expect(response.status).toBe(200);
+        expect(response.status).toBe(500);
 
 
     })
@@ -54,7 +54,7 @@ test('Post-Create a new user', async ()=>{
     }
     const response = await request.post('api/users').send(user)
 
-    expect(response.status).toBe(201);
+    expect(response.status).toBe(501);
     expect(response.body.name).toBe("morphoseS")
     job=response.body.job
 
@@ -71,7 +71,7 @@ test.each([["Alex","Manager"],["Paul","Architec"],["Sam","Lead"]])('Post-Create 
     }
     const response = await request.post('api/users').send(user)
 
-    expect(response.status).toBe(201);
+    expect(response.status).toBe(501);
     expect(response.body.name).toBe(name)
     console.log(response.body)
 
