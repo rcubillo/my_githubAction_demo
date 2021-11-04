@@ -19,7 +19,7 @@ test('Get All Users ', async ()=> {
 
     const response= await request.get('api/users?page=2')
     console.log(response.body)
-    expect(response.status).toBe(501);
+    expect(response.status).toBe(201);
 
     
 })
@@ -31,7 +31,7 @@ test.each([1,2,3])('Get All Users from page (%s) ', async (page)=> {
 
     const response= await request.get(`api/users?page=${page}`)
     console.log(response.body)
-    expect(response.status).toBe(500);
+    expect(response.status).toBe(200);
 
     
 })
@@ -42,7 +42,7 @@ test.each(Array.from(Array(5).keys()))('Get All Users from page (%s) ', async (p
 
         const response= await request.get(`api/users?page=${page}`)
         console.log(response.body)
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
 
 
     })
