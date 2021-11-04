@@ -19,7 +19,7 @@ test('Get All Users ', async ()=> {
 
     const response= await request.get('api/users?page=2')
     console.log(response.body)
-    expect(response.status).toBe(200);
+    expect(response.status).toBe(201);
 
     
 })
@@ -55,7 +55,7 @@ test('Post-Create a new user', async ()=>{
     const response = await request.post('api/users').send(user)
 
     expect(response.status).toBe(201);
-    expect(response.body.name).toBe("morphose")
+    expect(response.body.name).toBe("morphoseS")
     job=response.body.job
 
 
