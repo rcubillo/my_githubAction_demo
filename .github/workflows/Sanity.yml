@@ -3,15 +3,15 @@
 
 name: Sanity
 
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
 on:
   push:
-    paths:
-      - '**/sanitySuite/*'
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+# on:
+#   push:
+#     paths:
+#       - '**/sanitySuite/*'
 
 jobs:
   build:
