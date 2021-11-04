@@ -22,7 +22,7 @@ describe('API DEMO Test', () => {
     test.each(TestData.user)('Post-Create a new user (%s)', async (user) => {
 
         const response = await request.post('api/users').send(user)
-        expect(response.status).toBe(201);
+        expect(response.status).toBe(501);
         expect(response.body.name).toBe(user.name)
         console.log(response.body)
 
@@ -32,7 +32,7 @@ describe('API DEMO Test', () => {
 
         const response= await request.get(`api/users?page=${TestData.getUser.id}`)
         console.log(response.body)
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     
         
     });
